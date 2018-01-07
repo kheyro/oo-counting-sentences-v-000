@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     test = self.split(/[.!?]/)
-    test.reject(&:empty?)
+    test = test.reject(&:empty?)
     binding.pry
   end
 end
